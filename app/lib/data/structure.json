@@ -1,0 +1,66 @@
+{
+  "folders": [
+    {
+      "id": "folder1",
+      "name": "Financial Reports",
+      "reports": [
+        {
+          "id": "report1",
+          "name": "Q1 Financial Summary",
+          "isActive": true,
+          "tags": [
+            "finance",
+            "quarterly"
+          ],
+          "date": "2024-01-15"
+        },
+        {
+          "id": "report2",
+          "name": "Q2 Financial Summary",
+          "isActive": true,
+          "tags": [
+            "finance",
+            "quarterly"
+          ],
+          "date": "2024-04-15"
+        },
+        {
+          "id": "report4",
+          "name": "Q3 Financial Summary",
+          "isActive": true,
+          "tags": [
+            "finance",
+            "quarterly"
+          ],
+          "date": "2024-04-15"
+        },
+        {
+          "id": "report5",
+          "name": "Q5 Financial Summary",
+          "isActive": true,
+          "tags": [
+            "finance",
+            "quarterly"
+          ],
+          "date": "2024-04-15"
+        }
+      ]
+    },
+    {
+      "id": "folder2",
+      "name": "Marketing Reports",
+      "reports": [
+        {
+          "id": "report3",
+          "name": "Campaign Performance",
+          "isActive": true,
+          "tags": [
+            "marketing",
+            "campaign"
+          ],
+          "date": "2024-03-20"
+        }
+      ]
+    }
+  ]
+}
