@@ -10,7 +10,7 @@ export default function SideNav() {
         href="/dashboard"
       >
         <div className="w-32 text-white md:w-40">
-          <span className="${lusitana.className} text-white text-xl md:text-3xl">AlpgaGrep</span>
+          <span className="${lusitana.className} text-white text-xl md:text-3xl">AlphaGrep</span>
         </div>
       </Link>
       <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">

@@ -4,6 +4,7 @@ import { useEffect, useState, useMemo } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { getReportsByFolder, toggleReportStatus, getReportCSV, type Report } from '@/app/lib/data/data';
 import { ChevronDownIcon, ChevronRightIcon, MagnifyingGlassIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
+import { Switch } from '@headlessui/react';
 
 interface ReportGridProps {
   reports: Report[];
@@ -399,16 +400,25 @@ export default function ReportGrid({ reports: initialReports, defaultFolder }: R
                             {report.name}
                           </td>
                           <td className="px-4 py-2.5">
-                            <button
-                              onClick={() => handleToggleActive(report.id, report.isActive)}
-                              className={`px-2 py-0.5 text-xs rounded-full transition-colors ${
-                                report.isActive 
-                                  ? 'bg-green-50 text-green-700 hover:bg-green-100' 
-                                  : 'bg-gray-50 text-gray-600 hover:bg-gray-100'
-                              }`}
+                            <Switch
+                              checked={report.isActive}
+                              onChange={() => handleToggleActive(report.id, report.isActive)}
+                              className={`${
+                                report.isActive ? 'bg-blue-600' : 'bg-gray-200'
+                              } relative inline-flex h-5 w-9 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2`}
                             >
+                              <span className="sr-only">
+                                {report.isActive ? 'Active' : 'Inactive'}
+                              </span>
+                              <span
+                                className={`${
+                                  report.isActive ? 'translate-x-5' : 'translate-x-1'
+                                } inline-block h-3 w-3 transform rounded-full bg-white transition-transform`}
+                              />
+                            </Switch>
+                            <span className="ml-2 text-xs text-gray-600">
                               {report.isActive ? 'Active' : 'Inactive'}
-                            </button>
+                            </span>
                           </td>
                           <td className="px-4 py-2.5">
                             <div className="flex gap-1 flex-wrap items-center">
@@ -563,16 +573,25 @@ export default function ReportGrid({ reports: initialReports, defaultFolder }: R
                       {report.name}
                     </td>
                     <td className="px-4 py-2.5">
-                      <button
-                        onClick={() => handleToggleActive(report.id, report.isActive)}
-                        className={`px-2 py-0.5 text-xs rounded-full transition-colors ${
-                          report.isActive 
-                            ? 'bg-green-50 text-green-700 hover:bg-green-100' 
-                            : 'bg-gray-50 text-gray-600 hover:bg-gray-100'
-                        }`}
+                      <Switch
+                        checked={report.isActive}
+                        onChange={() => handleToggleActive(report.id, report.isActive)}
+                        className={`${
+                          report.isActive ? 'bg-blue-600' : 'bg-gray-200'
+                        } relative inline-flex h-5 w-9 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2`}
                       >
+                        <span className="sr-only">
+                          {report.isActive ? 'Active' : 'Inactive'}
+                        </span>
+                        <span
+                          className={`${
+                            report.isActive ? 'translate-x-5' : 'translate-x-1'
+                          } inline-block h-3 w-3 transform rounded-full bg-white transition-transform`}
+                        />
+                      </Switch>
+                      <span className="ml-2 text-xs text-gray-600">
                         {report.isActive ? 'Active' : 'Inactive'}
-                      </button>
+                      </span>
                     </td>
                     <td className="px-4 py-2.5">
                       <div className="flex gap-1 flex-wrap items-center">
