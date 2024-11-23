@@ -5,7 +5,7 @@
 A React-based dashboard for viewing and managing dynamic CSV reports with features like sorting, filtering, and manual grouping.
 
 ## Features
-- Dynamic loading of CSV files from the `/folder` directory.
+- Dynamic loading of CSV files from the `/reports` directory.
 - Manual grouping, sorting, and filtering of report data.
 - File upload for adding new CSV reports dynamically.
 
