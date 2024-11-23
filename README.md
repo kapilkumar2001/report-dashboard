@@ -1,5 +1,34 @@
-## Next.js App Router Course - Starter
 
-This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.
+# Dynamic Report Dashboard Interface
 
-For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
+## Overview
+A React-based dashboard for viewing and managing dynamic CSV reports with features like sorting, filtering, and manual grouping.
+
+## Features
+- Dynamic loading of CSV files from the `/folder` directory.
+- Manual grouping, sorting, and filtering of report data.
+- File upload for adding new CSV reports dynamically.
+
+## Setup and Installation
+
+1. **Clone the Repository:**
+   ```bash
+   git clone <repository-url>
+   ```
+
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Run Server:**
+   ```bash
+   npm run start
+   ```
+
+4. **Access the Application:**
+   Open your browser and navigate to:
+   ```
+   http://localhost:3000
+   ```
+
