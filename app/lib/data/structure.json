@@ -6,43 +6,109 @@
       "reports": [
         {
           "id": "report1",
-          "name": "Q1 Financial Summary",
+          "name": "Q1 Revenue Analysis",
           "isActive": true,
           "tags": [
             "finance",
-            "quarterly"
+            "quarterly",
+            "revenue"
           ],
           "date": "2024-01-15"
         },
         {
           "id": "report2",
-          "name": "Q2 Financial Summary",
+          "name": "Q1 Expense Report",
           "isActive": true,
           "tags": [
             "finance",
-            "quarterly"
+            "quarterly",
+            "expenses"
           ],
-          "date": "2024-04-15"
+          "date": "2024-01-15"
+        },
+        {
+          "id": "report3",
+          "name": "Q1 Cash Flow Statement",
+          "isActive": false,
+          "tags": [
+            "finance",
+            "quarterly",
+            "cash-flow"
+          ],
+          "date": "2024-02-01"
         },
         {
           "id": "report4",
-          "name": "Q3 Financial Summary",
-          "isActive": true,
+          "name": "Q1 Balance Sheet",
+          "isActive": false,
           "tags": [
             "finance",
-            "quarterly"
+            "quarterly",
+            "balance"
           ],
-          "date": "2024-04-15"
+          "date": "2024-02-01"
         },
         {
           "id": "report5",
-          "name": "Q5 Financial Summary",
+          "name": "Q1 Profit & Loss",
+          "isActive": false,
+          "tags": [
+            "finance",
+            "quarterly",
+            "profit"
+          ],
+          "date": "2024-03-01"
+        },
+        {
+          "id": "report6",
+          "name": "Annual Budget Review",
           "isActive": true,
           "tags": [
             "finance",
-            "quarterly"
+            "annual",
+            "budget"
           ],
-          "date": "2024-04-15"
+          "date": "2024-03-01"
+        },
+        {
+          "id": "report7",
+          "name": "Investment Portfolio Analysis",
+          "isActive": true,
+          "tags": [
+            "finance",
+            "investment"
+          ],
+          "date": "2024-01-15"
+        },
+        {
+          "id": "report8",
+          "name": "Tax Compliance Report",
+          "isActive": false,
+          "tags": [
+            "finance",
+            "tax"
+          ],
+          "date": "2024-02-01"
+        },
+        {
+          "id": "report9",
+          "name": "Financial Forecasting",
+          "isActive": true,
+          "tags": [
+            "finance",
+            "forecast"
+          ],
+          "date": "2024-03-01"
+        },
+        {
+          "id": "report10",
+          "name": "Audit Findings Summary",
+          "isActive": false,
+          "tags": [
+            "finance",
+            "audit"
+          ],
+          "date": "2024-01-15"
         }
       ]
     },
@@ -51,14 +117,151 @@
       "name": "Marketing Reports",
       "reports": [
         {
-          "id": "report3",
-          "name": "Campaign Performance",
+          "id": "report1",
+          "name": "Social Media Performance",
           "isActive": true,
           "tags": [
             "marketing",
-            "campaign"
+            "social-media"
           ],
-          "date": "2024-03-20"
+          "date": "2024-01-21"
+        },
+        {
+          "id": "report2",
+          "name": "Email Campaign Results",
+          "isActive": true,
+          "tags": [
+            "marketing",
+            "email"
+          ],
+          "date": "2024-01-21"
+        },
+        {
+          "id": "report4",
+          "name": "Lead Generation Report",
+          "isActive": true,
+          "tags": [
+            "marketing",
+            "leads"
+          ],
+          "date": "2024-02-15"
+        },
+        {
+          "id": "report5",
+          "name": "Content Marketing ROI",
+          "isActive": false,
+          "tags": [
+            "marketing",
+            "content",
+            "roi"
+          ],
+          "date": "2024-03-10"
+        },
+        {
+          "id": "report6",
+          "name": "PPC Campaign Performance",
+          "isActive": true,
+          "tags": [
+            "marketing",
+            "ppc"
+          ],
+          "date": "2024-01-20"
+        },
+        {
+          "id": "report8",
+          "name": "Competitor Analysis",
+          "isActive": true,
+          "tags": [
+            "marketing",
+            "competitor"
+          ],
+          "date": "2024-03-10"
+        },
+        {
+          "id": "report9",
+          "name": "Marketing Channel ROI",
+          "isActive": false,
+          "tags": [
+            "marketing",
+            "roi"
+          ],
+          "date": "2024-03-10"
+        },
+        {
+          "id": "report10",
+          "name": "Customer Segmentation",
+          "isActive": false,
+          "tags": [
+            "marketing",
+            "customer"
+          ],
+          "date": "2024-01-20"
+        }
+      ]
+    },
+    {
+      "id": "folder3",
+      "name": "Sales Reports",
+      "reports": [
+        {
+          "id": "report1",
+          "name": "Regional Sales Performance",
+          "isActive": true,
+          "tags": [
+            "sales",
+            "regional"
+          ],
+          "date": "2024-01-10"
+        },
+        {
+          "id": "report4",
+          "name": "Customer Acquisition Cost",
+          "isActive": false,
+          "tags": [
+            "sales",
+            "metrics"
+          ],
+          "date": "2024-02-20"
+        },
+        {
+          "id": "report5",
+          "name": "Sales Forecast",
+          "isActive": false,
+          "tags": [
+            "sales",
+            "forecast"
+          ],
+          "date": "2024-03-15"
+        },
+        {
+          "id": "report6",
+          "name": "Pipeline Analysis",
+          "isActive": true,
+          "tags": [
+            "sales",
+            "pipeline"
+          ],
+          "date": "2024-01-10"
+        },
+        {
+          "id": "report7",
+          "name": "Win/Loss Analysis",
+          "isActive": true,
+          "tags": [
+            "sales",
+            "analysis"
+          ],
+          "date": "2024-02-20"
+        },
+        {
+          "id": "report10",
+          "name": "Deal Size Analysis",
+          "isActive": false,
+          "tags": [
+            "sales",
+            "deals"
+          ],
+          "date": "2024-01-10"
         }
       ]
     }

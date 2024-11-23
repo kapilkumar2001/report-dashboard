@@ -59,3 +59,40 @@ export async function getReportsByFolder(folderId: string): Promise<Report[]> {
         return [];
     }
 }
+
+export async function toggleReportStatus(reportId: string, status: boolean) {
+  try {
+    // Read the current structure
+    const filePath = path.join(process.cwd(), 'app/lib/data', 'structure.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    const structure = JSON.parse(fileContents);
+
+    // Update the report status in all folders
+    structure.folders = structure.folders.map((folder: Folder) => ({
+      ...folder,
+      reports: folder.reports.map((report: any) =>
+        report.id === reportId
+          ? { ...report, isActive: status }
+          : report
+      )
+    }));
+
+    // Write back to the file
+    await fs.writeFile(filePath, JSON.stringify(structure, null, 2));
+    return true;
+  } catch (error) {
+    console.error('Error toggling report status:', error);
+    return false;
+  }
+}
+
+export async function getReportCSV(reportId: string) {
+  try {
+    const csvPath = path.join(process.cwd(), 'app/lib/data', 'reports', `${reportId}.csv`);
+    const csvContent = await fs.readFile(csvPath, 'utf8');
+    return csvContent;
+  } catch (error) {
+    console.error('Error fetching report CSV:', error);
+    throw error; // Rethrow to handle in the component
+  }
+}
